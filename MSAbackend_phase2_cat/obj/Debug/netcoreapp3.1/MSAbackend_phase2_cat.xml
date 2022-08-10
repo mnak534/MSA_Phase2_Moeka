@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MSAbackend_phase2_cat</name>
+    </assembly>
+    <members>
+        <member name="M:MSA.Phase2.AmazingApi.Controllers.CatController.#ctor(System.Net.Http.IHttpClientFactory)">
+            <summary />
+        </member>
+        <member name="M:MSA.Phase2.AmazingApi.Controllers.CatController.GetRandomCatImage">
+            <summary>
+            Gets a random image of a cat
+            </summary>
+            <returns>A random image of a cat</returns>
+        </member>
+        <member name="M:MSA.Phase2.AmazingApi.Controllers.CatController.GetCatImagebyID(System.String)">
+            <summary>
+            Gets an image of a cat by its ID
+            </summary>
+            <returns>An image of a cat specified by its ID</returns>
+        </member>
+        <member name="M:MSA.Phase2.AmazingApi.Controllers.CatController.GetVote(System.String)">
+            <summary>
+            Gets a vote its vote ID
+            </summary>
+            <returns>A vote specified by its vote ID</returns>
+        </member>
+        <member name="M:MSA.Phase2.AmazingApi.Controllers.CatController.PostVote(MSAbackend_phase2_cat.CatVotes)">
+            <summary>
+            Posts a vote for an image of a cat (value is a vote and can be 1 or 0)
+            </summary>
+            <returns>A vote id and if the vote was success or not</returns>
+        </member>
+        <member name="M:MSA.Phase2.AmazingApi.Controllers.CatController.PutVoteAsync(System.String,MSAbackend_phase2_cat.CatVotes)">
+            <summary>
+            Updates the vote value if the vote exsists already otherwise creates a new vote
+            </summary>
+            <returns>A 201 Created Response></returns>
+        </member>
+        <member name="M:MSA.Phase2.AmazingApi.Controllers.CatController.DeleteVote(System.String)">
+            <summary>
+            Deletes a vote
+            </summary>
+            <returns>A 204 No Content Response</returns>
+        </member>
+    </members>
+</doc>
